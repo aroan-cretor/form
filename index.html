@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Microverse Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class=form-container>
+    <div class="main">
+      <h1 id="title">Microverse Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </div>
+    <div class="top">
+      <f id="survey-form" action="">
+        <div>
+          <label id="number-name"> Name</label>
+          <input type="text" name : placeholder="name" />
+        </div>
+        <br />
+        <div>
+          <label id="number-email"> Email</label>
+          <input required id="email" type="email" name : placeholder="Email" />  
+        </div>
+        <br />
+        <div>
+          <label id="number-label">Age</label>
+          <input id="number" ype="number" placeholder="Age"  min="13" max="50"/><br />
+        </div>
+        <br>
+        <div>
+          <label id="number-role"> Which option best describes your current role?</label></br>
+        <select name="role" id="">
+          <option value="">select current role</option>
+          <option value="student">student</option>
+          <option value="fulltime">Fulltime job</option>
+          <option value="learner">Fulltime learner</option>
+          <option value="any">perefer not to say</option>
+          <option value="other">other</option>
+        </select>
+        </div>
+        <br />
+        <div>
+          <label>Would you recommend Microverse to a friend?</label>
+          <input
+            type="radio"
+            id="Definitely"
+            name="Definitely"
+            value="definitely"
+          />
+          <label for="Definitely">Definitely </label>
+          <br />
+          <input type="radio" id="maybe" name="maybe" value="maybe" />
+          <label for="Maybe">Maybe </label>
+          <br />
+          <input type="radio" id="Notsure" name="Notsure" value="Notsure" />
+          <label for="Notsure"> Not sure </label>
+        </div>
+        <div>
+          <label>What is your favorite feature of Microverse?</label> </br>
+          <select name="" id="dropdown">
+            <option value="">select an option</option>
+            <option value="challenges">challenges</option>
+            <option value="projects">projects</option>
+            <option value="community">community</option>
+            <option value="opensource">open source</option>
+          </select>
+        <br />
+        </div>
+        <div>
+          <lablel>What would you like to see improved? (Check all that apply)</lablel>
+          <input
+            type="checkbox"
+            id="Front-end Projects"
+            name="Front-end Projects"
+            value="Front-end Projects"
+          />
+          <label for="Front-end Projects">Front-end Projects </label>
+          <br />
+          <input
+            type="checkbox"
+            id="Back-end Projects"
+            name="maybe"
+            value="Back-end Projects"
+          />
+          <label for="Back-end Projects">Back-end Projects </label>
+          <br />
+          <input
+            type="checkbox"
+            id="Data Visualization"
+            name="Data Visualization"
+            value="Data Visualization"
+          />
+          <label for="Data Visualization"> Data Visualization </label>
+        </div>
+        <div>
+        <label>Any comments or suggestions?</label> <br />
+        <textarea
+          type="textarea"
+          rows="5"
+          placeholder="Enter your comment here"
+        >
+        </textarea>
+        <br />
+      </div>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
